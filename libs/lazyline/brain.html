@@ -1,0 +1,112 @@
+ 
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+          body, html {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+            #brain {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+     
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#brain');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500px" height="500px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 500 500" xmlns:xlink="http://www.w3.org/1999/xlink" data-llp-composed="true" id="brain" class="lazy-line-painter">
+ <defs>
+  <style type="text/css">
+   
+    .str6 {stroke:#73C012;stroke-width:6.133;stroke-miterlimit:2.61313}
+    .str7 {stroke:#73C012;stroke-width:6.133;stroke-miterlimit:2.61313}
+    .str2 {stroke:#73C012;stroke-width:6.133;stroke-miterlimit:2.61313}
+    .str5 {stroke:#73C012;stroke-width:6.133;stroke-miterlimit:2.61313}
+    .str4 {stroke:#73C012;stroke-width:6.133;stroke-miterlimit:2.61313}
+    .str3 {stroke:#73C012;stroke-width:6.133;stroke-miterlimit:2.61313}
+    .str1 {stroke:#73C012;stroke-width:16.355;stroke-linecap:round;stroke-miterlimit:2.61313}
+    .str0 {stroke:#73C012;stroke-width:8.177;stroke-linecap:round;stroke-miterlimit:2.61313}
+    .str8 {stroke:#73C012;stroke-width:8.178;stroke-linecap:round;stroke-miterlimit:2.61313}
+    .fil0 {fill:none}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polyline class="fil0 str0" points="235.316,439.516 235.316,62.584 186.049,33.65 134.436,62.584 135.174,121.196 " data-llp-id="brain-0" data-llp-duration="340" data-llp-delay="0" fill-opacity="0"/>
+  <polyline class="fil0 str0" points="134.665,86.05 83.606,117.325 83.606,154.079 134.436,183.796 134.436,236.974 " data-llp-id="brain-1" data-llp-duration="340" data-llp-delay="340" fill-opacity="0"/>
+  <polyline class="fil0 str0" points="134.436,183.796 186.049,150.951 186.049,93.909 " data-llp-id="brain-2" data-llp-duration="340" data-llp-delay="680" fill-opacity="0"/>
+  <polyline class="fil0 str0" points="83.606,154.079 34.339,182.231 34.339,318.302 84.386,348.019 134.436,318.302 134.436,289.367 83.606,259.652 83.606,231.543 " data-llp-id="brain-3" data-llp-duration="340" data-llp-delay="1020" fill-opacity="0"/>
+  <line class="fil0 str0" x1="34.339" y1="274.511" x2="71.382" y2="295.255" data-llp-id="brain-4" data-llp-duration="340" data-llp-delay="1360" fill-opacity="0"/>
+  <polyline class="fil0 str0" points="134.436,318.302 185.268,348.019 184.656,410.539 " data-llp-id="brain-5" data-llp-duration="340" data-llp-delay="1700" fill-opacity="0"/>
+  <polyline class="fil0 str0" points="84.386,348.019 84.386,383.993 132.873,411.362 132.873,375.435 " data-llp-id="brain-6" data-llp-duration="340" data-llp-delay="2040" fill-opacity="0"/>
+  <polyline class="fil0 str0" points="132.873,411.362 132.873,437.951 184.486,467.668 235.316,439.516 " data-llp-id="brain-7" data-llp-duration="340" data-llp-delay="2380" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="266.673,63.383 266.673,440.315 315.94,469.249 367.553,440.315 366.77,359.768 " data-llp-id="brain-8" data-llp-duration="340" data-llp-delay="2720" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="367.323,416.849 418.383,385.574 418.383,348.82 367.553,319.103 367.553,265.925 " data-llp-id="brain-9" data-llp-duration="340" data-llp-delay="3060" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="367.553,319.103 315.94,351.948 315.94,426.239 " data-llp-id="brain-10" data-llp-duration="340" data-llp-delay="3400" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="418.383,348.82 467.65,320.668 467.65,184.598 417.602,154.88 367.553,184.598 367.553,213.532 418.383,243.247 418.383,288.605 " data-llp-id="brain-11" data-llp-duration="340" data-llp-delay="3740" fill-opacity="0"/>
+  <line class="fil0 str1" x1="467.65" y1="228.388" x2="409" y2="195.545" data-llp-id="brain-12" data-llp-duration="340" data-llp-delay="4080" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="367.553,184.598 316.721,154.88 317.503,75.114 " data-llp-id="brain-13" data-llp-duration="340" data-llp-delay="4420" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="417.602,154.88 417.602,118.907 369.116,91.537 369.116,144.713 " data-llp-id="brain-14" data-llp-duration="340" data-llp-delay="4760" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="369.116,91.537 369.116,64.949 317.503,35.231 266.673,63.383 " data-llp-id="brain-15" data-llp-duration="340" data-llp-delay="5100" fill-opacity="0"/>
+  <polyline class="fil0 str1" points="266.673,336.307 316.721,303.461 317.503,251.069 " data-llp-id="brain-16" data-llp-duration="340" data-llp-delay="5440" fill-opacity="0"/>
+  <line class="fil0 str1" x1="266.673" y1="179.121" x2="342.527" y2="221.352" data-llp-id="brain-17" data-llp-duration="340" data-llp-delay="5780" fill-opacity="0"/>
+  <ellipse class="fil0 str2" cx="86.179" cy="303.54" rx="16.866" ry="17.249" data-llp-id="brain-18" data-llp-duration="340" data-llp-delay="6120" fill-opacity="0"/>
+  <ellipse class="fil0 str3" cx="83.606" cy="214.294" rx="16.866" ry="17.249" data-llp-id="brain-19" data-llp-duration="340" data-llp-delay="6460" fill-opacity="0"/>
+  <ellipse class="fil0 str4" cx="186.048" cy="76.66" rx="16.866" ry="17.249" data-llp-id="brain-20" data-llp-duration="340" data-llp-delay="6800" fill-opacity="0"/>
+  <ellipse class="fil0 str5" cx="135.174" cy="138.446" rx="16.866" ry="17.249" data-llp-id="brain-21" data-llp-duration="340" data-llp-delay="7140" fill-opacity="0"/>
+  <ellipse class="fil0 str6" cx="132.873" cy="358.186" rx="16.866" ry="17.249" data-llp-id="brain-22" data-llp-duration="340" data-llp-delay="7480" fill-opacity="0"/>
+  <ellipse class="fil0 str7" cx="184.485" cy="427.786" rx="16.866" ry="17.249" data-llp-id="brain-23" data-llp-duration="340" data-llp-delay="7820" fill-opacity="0"/>
+  <polyline class="fil0 str8" points="235.316,165.176 184.656,198.423 183.852,252.256 " data-llp-id="brain-24" data-llp-duration="340" data-llp-delay="8160" fill-opacity="0"/>
+  <line class="fil0 str8" x1="234.985" y1="325.573" x2="158.14" y2="282.789" data-llp-id="brain-25" data-llp-duration="340" data-llp-delay="8500" fill-opacity="0"/>
+ </g>
+</svg>
+      </body>
+    </html>

@@ -1,0 +1,14 @@
+{
+  "name": "aos",
+  "homepage": "https://github.com/michalsnik/aos",
+  "_release": "329fb34f77",
+  "_resolution": {
+    "type": "branch",
+    "branch": "next",
+    "commit": "329fb34f777034345f4d3f4def4dc3bcc300cc2e"
+  },
+  "_source": "https://github.com/michalsnik/aos.git",
+  "_target": "next",
+  "_originalSource": "aos",
+  "_direct": true
+}

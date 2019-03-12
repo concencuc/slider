@@ -1,0 +1,404 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+
+//------------------------------------ animation keyframes ------------------------------------ //
+@keyframes moveScrollLine
+	from
+		transform: translateY(-100%)
+	to
+		transform: translateY(100%)
+
+
+@keyframes moveOrbit1
+	from
+		transform: translateX(-50%) translateY(-50%) rotate(-35deg)
+	to
+		transform: translateX(-50%) translateY(-50%) rotate(-395deg)
+
+
+@keyframes moveOrbit2
+	from
+		transform: translateX(-50%) translateY(-50%) rotate(20deg)
+	to
+		transform: translateX(-50%) translateY(-50%) rotate(-340deg)
+
+
+@keyframes moveOrbit3
+	from
+		transform: translateX(-50%) translateY(-50%) rotate(-5deg)
+	to
+		transform: translateX(-50%) translateY(-50%) rotate(-365deg)
+
+
+@keyframes emergTopDown
+	from
+		transform: translateY(-30%)
+		opacity: 0
+	to
+		opacity: 1
+		transform: translateY(0) 
+
+
+@keyframes emergLeftRight
+	from
+		transform: translateX(-20%)
+		opacity: 0
+	to
+		opacity: 1
+		transform: translateY(0)
+
+
+@keyframes emergTitle
+	from
+		transform: translateY(-50%)
+		opacity: 0
+	to
+		opacity: 1
+		transform: translateY(0)
+
+
+@keyframes fadeInImg
+	from
+		transform: scale(1.5,1.5)
+		opacity: 0
+	to
+		transform: scale(1,1)
+		opacity: 1
+
+
+@keyframes animateEllips
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+//------------------------------------ end animation keyframes ------------------------------------ //
+
+
+
+
+::placeholder
+	color: #666
+
+::selection
+	color: #fff
+
+input
+	box-sizing: border-box
+	padding: 1rem 1.5rem
+	border-radius: 40px
+	border: none
+	outline: none
+	text-align: center
+	font-family: $menu-font
+	font-size: 14px
+	position: relative
+
+body
+	min-width: 20rem
+	position: relative
+	line-height: 1.2
+	font-family: $default-font
+	overflow-x: hidden
+	margin: 0
+
+h1
+	font-size: 42px
+	letter-spacing: 1px
+
+h2
+	text-align: center
+	font-size: 38px
+	font-weight: 700
+	color: white
+	text-align: left
+	letter-spacing: 2px
+	margin-top: 0
+
+h4
+	font-size: 20px
+
+a
+	text-decoration: none
+	color: $btn-color
+	display: table
+
+.wrap-center
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	height: 100%
+	overflow: hidden
+
+.content
+	width: 100%
+	max-width: 1280px
+	box-sizing: border-box
+	padding: 2rem 1rem
+	position: relative
+	display: flex
+	height: 100%
+
+.btn
+	font-family: $btn-font
+	background-color: $btn-color
+	background-image: linear-gradient(to right, #57b115, #a1d507)
+	border-radius: 40px
+	padding: 0.8rem 2rem
+	color: white
+	display: table
+	font-size: 14px
+
+.gradient
+	background-image: linear-gradient(-29deg, #a4d905 0%, #57b016 100%)
+	-webkit-text-fill-color: transparent
+	-webkit-background-clip: text
+	color: #68b823
+
+.gradient2
+	background-image: linear-gradient(to left, #57b115, #a1d507)
+	-webkit-text-fill-color: transparent
+	-webkit-background-clip: text
+	color: #68b823	
+
+//animationClass
+.emergence-title
+	animation: emergTitle 0.8s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-out
+
+.emergence-top-down
+	animation: emergTopDown 0.8s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-out
+
+.emergence-left-right
+	animation: emergLeftRight 0.8s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-out
+
+.animateImg
+	animation: fadeInImg 0.8s
+	animation-fill-mode: forwards
+	animation-timing-function: ease-out
+
+//------------------------------------ header ------------------------------------//
+.header
+	background-color: #0000
+	position: absolute
+	width: 100%
+	left: 0
+	top: 4rem
+	z-index: $z-index-menu
+	font-family: $menu-font
+	opacity: 0
+	//transition: all .2s
+	.content
+		display: flex
+		justify-content: space-between
+		align-content: center
+		padding: 1rem
+	.left-column,.right-column,.logo
+		display: flex
+		align-items: center
+	a
+		margin: 0
+		color: white
+	span
+		margin: 0
+		margin-left: 1px
+		color: white
+	.logo
+		margin-right: 3rem
+		&>p
+			font-family: $btn-font
+			margin-left: 0.5rem
+			color: white
+			font-weight: bold
+			color: $btn-color
+	img
+		width: auto
+		height: 100%
+	.left-column a:not(:first-child)
+		margin-left: 2rem
+		position: relative
+		font-size: 15px !important
+		&:after
+			content: ''
+			width: 0
+			height: 2px
+			background-color: $btn-color
+			position: absolute
+			right: 0
+			bottom: 10px
+			display: block
+			transition: width .2s
+		&:hover:after
+			left: 0
+			width: 100%
+	.right-column div:first-child
+		margin-right: 2rem
+	.order
+		a
+			display: flex
+			align-items: center
+			&:after
+				position: relative
+				content: url(../img/ico/basket.png)
+				padding-left: 0.8rem
+				transform: translateY(5%)
+	.lk a
+		display: flex
+		align-items: center
+		font-size: 15px !important
+		&:before
+			position: relative
+			content: url(../img/ico/userLK.png)
+			padding-right: 0.8rem
+			transform: translateY(5%)
+
+.header-fixed
+	position: fixed
+	top: 0
+	//transform: translateY(0)
+	background-color: white
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+	p,a,span
+		color: black
+	.order a
+		color: white
+	// transition: all .2s
+	.lk a:before
+		content: url(../img/ico/userLKfixed.png)
+//------------------------------------ end header ------------------------------------//
+
+
+//------------------------------------ footer ------------------------------------//
+#footer
+	position: relative
+	width: 100%
+	background-color: #353a42
+	.content
+		display: block
+		padding-bottom: 1rem
+		padding-top: 4rem
+	.top-column
+		display: flex
+		flex-wrap: wrap
+		border-bottom: 1px solid #474c53
+	h3,a,p
+		color: #60646a
+	h3
+		margin: 0.5rem 0
+	h2
+		margin-top: 0
+		font-size: 24px
+		font-weight: normal
+	.logo-wrap
+		width: 15%
+		display: block
+		a
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			width: 50%
+		h3
+			text-align: center
+			width: 100%
+			margin: 0.5rem 0 0 0
+			color: white
+			font-family: $btn-font
+			font-weight: normal
+	.footer-info-wrap
+		display: flex
+		justify-content: space-between
+		width: 85%
+	.footer-link-wrap
+		display: flex
+		flex-direction: column
+		a
+			margin: 0.5rem 0
+	.mobile-magazine-wrap,.bottom-column
+		position: relative
+		width: 85%
+		left: 15%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 2rem 0
+ 	.items-wrap
+		a
+			display: inline-block
+		a:last-child
+			margin-left: 4rem
+	.bottom-column
+		margin-top: 1rem
+		margin-bottom: 0
+//------------------------------------ end footer ------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#product
+	.content
+		position: static
+	.product-slide-wrap
+		position: relative
+		width: 100%
+		margin-top: 45rem
+		// min-height: 50rem
+		// height: 80vh
+		box-sizing: border-box
+		border: 1px solid	black
+		// transition: opacity 0.1s
+		opacity: 0
+		display: flex
+	.product-slide-wrap:first-child
+		margin-top: 0rem
+		opacity: 0
+	.product-slide-wrap:nth-child(3)
+		justify-content: flex-end
+	.product-slide-wrap:nth-child(4)
+		justify-content: flex-end
+	.product-slide-wrap:nth-child(5)
+		justify-content: flex-end
+	.product-slide-wrap:nth-child(6)
+		justify-content: flex-end
+	.product-slide
+		position: relative
+		width: 40%
+	.cube-animation-wrap
+		position: absolute
+		width: 600px
+		height: 600px
+		z-index: 1
+		top: 150px
+		// background-color: black
+		left: 50%
+		transform: translateX(0%)
+		transition: transform .5s
+	.cube-animation-wrap-fixed
+		position: fixed
+	.cube-animation-wrap-bottom
+		top: unset
+		bottom: 0
+
+
+@import "media" // Always at the end

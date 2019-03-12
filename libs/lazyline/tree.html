@@ -1,0 +1,116 @@
+ 
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+          body, html {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+            #tree {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+     
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#tree');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeOutSine","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square","reverse":true}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1000px" height="1294px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1000 1294.12" xmlns:xlink="http://www.w3.org/1999/xlink" data-llp-composed="true" id="tree" class="lazy-line-painter">
+ <defs>
+  <style type="text/css">
+   
+    .tree14 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree10 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree8 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree6 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree12 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree13 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree15 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree9 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree7 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree11 {stroke:#FEFEFE;stroke-width:0.37;stroke-miterlimit:2.61313}
+    .tree1 {stroke:#FEFEFE;stroke-width:11.17;stroke-miterlimit:2.61313}
+    .tree3 {stroke:#FEFEFE;stroke-width:5.96;stroke-miterlimit:2.61313}
+    .tree5 {stroke:#FEFEFE;stroke-width:11.92;stroke-miterlimit:2.61313}
+    .tree2 {stroke:#FEFEFE;stroke-width:14.89;stroke-miterlimit:2.61313}
+    .tree0 {stroke:#FEFEFE;stroke-width:17.87;stroke-miterlimit:2.61313}
+    .tree4 {stroke:#FEFEFE;stroke-width:7.44;stroke-miterlimit:2.61313}
+    .fil0 {fill:none}
+    .fil1 {fill:#FEFEFE}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polyline class="fil0 tree0" points="474.38,296.85 474.38,1289.63 474.38,55.21 " data-llp-id="tree-0" data-llp-duration="300" data-llp-delay="0" fill-opacity="1"/>
+  <polyline class="fil0 tree1" points="505.66,1289.63 505.66,816.73 814.34,587.02 813.48,453.04 " data-llp-id="tree-1" data-llp-duration="300" data-llp-delay="300" fill-opacity="1"/>
+  <polyline class="fil0 tree2" points="542.89,1289.63 542.89,886.73 770.76,721.08 " data-llp-id="tree-2" data-llp-duration="300" data-llp-delay="600" fill-opacity="1"/>
+  <line class="fil0 tree3" x1="442.36" y1="938.85" x2="442.36" y2="1289.63" data-llp-id="tree-3" data-llp-duration="300" data-llp-delay="900" fill-opacity="1"/>
+  <line class="fil0 tree1" x1="721.11" y1="657.24" x2="719.24" y2="363.85" data-llp-id="tree-4" data-llp-duration="300" data-llp-delay="1200" fill-opacity="1"/>
+  <line class="fil0 tree0" x1="474.38" y1="295.46" x2="641.18" y2="295.13" data-llp-id="tree-5" data-llp-duration="300" data-llp-delay="1500" fill-opacity="1"/>
+  <line class="fil0 tree0" x1="632.15" y1="295.46" x2="631.88" y2="132.04" data-llp-id="tree-6" data-llp-duration="300" data-llp-delay="1800" fill-opacity="1"/>
+  <polyline class="fil0 tree4" points="474.38,666.3 601.72,570.65 601.72,445.55 " data-llp-id="tree-7" data-llp-duration="300" data-llp-delay="2100" fill-opacity="1"/>
+  <line class="fil0 tree3" x1="442.36" y1="938.85" x2="188.43" y2="767.25" data-llp-id="tree-8" data-llp-duration="300" data-llp-delay="2400" fill-opacity="1"/>
+  <line class="fil0 tree3" x1="321.74" y1="856.36" x2="323.2" y2="669.19" data-llp-id="tree-9" data-llp-duration="300" data-llp-delay="2700" fill-opacity="1"/>
+  <polyline class="fil0 tree2" points="474.38,618.18 204.81,411.29 204.81,330.46 " data-llp-id="tree-10" data-llp-duration="300" data-llp-delay="3000" fill-opacity="1"/>
+  <line class="fil0 tree5" x1="314.08" y1="495.16" x2="313.54" y2="180.69" data-llp-id="tree-11" data-llp-duration="300" data-llp-delay="3300" fill-opacity="1"/>
+  <circle id="circle10" class="fil1 tree6" cx="188.43" cy="767.25" r="23.83" data-llp-id="tree-12" data-llp-duration="300" data-llp-delay="3600" fill-opacity="1"/>
+  <circle id="circle9" class="fil1 tree7" cx="323.2" cy="669.19" r="23.83" data-llp-id="tree-13" data-llp-duration="300" data-llp-delay="3900" fill-opacity="1"/>
+  <circle id="circle8" class="fil1 tree8" cx="601.72" cy="445.55" r="23.83" data-llp-id="tree-14" data-llp-duration="300" data-llp-delay="4200" fill-opacity="1"/>
+  <circle id="circle7" class="fil1 tree9" cx="770.76" cy="721.08" r="23.83" data-llp-id="tree-15" data-llp-duration="300" data-llp-delay="4500" fill-opacity="1"/>
+  <circle id="circle6" class="fil1 tree10" cx="719.24" cy="363.85" r="23.83" data-llp-id="tree-16" data-llp-duration="300" data-llp-delay="4800" fill-opacity="1"/>
+  <circle id="circle5" class="fil1 tree11" cx="813.48" cy="453.04" r="23.83" data-llp-id="tree-17" data-llp-duration="300" data-llp-delay="5100" fill-opacity="1"/>
+  <circle id="circle4" class="fil1 tree12" cx="631.88" cy="132.04" r="23.83" data-llp-id="tree-18" data-llp-duration="300" data-llp-delay="5400" fill-opacity="1"/>
+  <circle id="circle3" class="fil1 tree13" cx="475.5" cy="39.57" r="23.83" data-llp-id="tree-19" data-llp-duration="300" data-llp-delay="5700" fill-opacity="1"/>
+  <circle id="circle2" class="fil1 tree14" cx="313.59" cy="186.65" r="23.83" data-llp-id="tree-20" data-llp-duration="300" data-llp-delay="6000" fill-opacity="1"/>
+  <circle id="circle1" class="fil1 tree15" cx="205.56" cy="313.74" r="35" data-llp-id="tree-21" data-llp-duration="300" data-llp-delay="6300" fill-opacity="1"/>
+ </g>
+</svg>
+      </body>
+    </html>

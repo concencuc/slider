@@ -1,0 +1,106 @@
+ 
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+          body, html {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+            #root {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+     
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#root');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1000px" height="1294px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1000 1294.12" xmlns:xlink="http://www.w3.org/1999/xlink" data-llp-composed="true" id="root" class="lazy-line-painter">
+ <defs>
+  <style type="text/css">
+   
+    .root1 {stroke:#DEDEDE;stroke-width:15.55;stroke-miterlimit:2.61313}
+    .root6 {stroke:#DEDEDE;stroke-width:18.66;stroke-miterlimit:2.61313}
+    .root4 {stroke:#DEDEDE;stroke-width:10.36;stroke-miterlimit:2.61313}
+    .root0 {stroke:#DEDEDE;stroke-width:24.87;stroke-miterlimit:2.61313}
+    .root2 {stroke:#DEDEDE;stroke-width:20.73;stroke-miterlimit:2.61313}
+    .root5 {stroke:#DEDEDE;stroke-width:16.59;stroke-miterlimit:2.61313}
+    .root3 {stroke:#DEDEDE;stroke-width:8.29;stroke-miterlimit:2.61313}
+    .fil0 {fill:none}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="470.71" y1="388.36" x2="470.71" y2="0.24" data-llp-id="root-0" data-llp-duration="210" data-llp-delay="0" fill-opacity="0" style=""/>
+  <line class="fil0 root1" x1="514.24" y1="160.32" x2="514.24" y2="0.24" data-llp-id="root-1" data-llp-duration="210" data-llp-delay="210" fill-opacity="0" style=""/>
+  <line class="fil0 root2" x1="566.07" y1="84.66" x2="566.07" y2="0.24" data-llp-id="root-2" data-llp-duration="210" data-llp-delay="420" fill-opacity="0" style=""/>
+  <line class="fil0 root3" x1="426.14" y1="213.19" x2="426.14" y2="0.24" data-llp-id="root-3" data-llp-duration="210" data-llp-delay="630" fill-opacity="0" style=""/>
+  <polyline class="fil0 root0" points="470.71,508.06 470.71,16.12 470.71,627.79 " data-llp-id="root-4" data-llp-duration="210" data-llp-delay="840" fill-opacity="0" style=""/>
+  <polyline class="fil0 root1" points="514.24,16.12 514.24,250.45 943.9,364.27 942.71,430.66 " data-llp-id="root-5" data-llp-duration="210" data-llp-delay="1050" fill-opacity="0" style=""/>
+  <polyline class="fil0 root2" points="566.07,16.12 566.07,215.77 883.24,297.84 " data-llp-id="root-6" data-llp-duration="210" data-llp-delay="1260" fill-opacity="0" style=""/>
+  <line class="fil0 root3" x1="426.14" y1="189.94" x2="426.14" y2="16.12" data-llp-id="root-7" data-llp-duration="210" data-llp-delay="1470" fill-opacity="0" style=""/>
+  <line class="fil0 root1" x1="814.14" y1="329.48" x2="811.53" y2="474.86" data-llp-id="root-8" data-llp-duration="210" data-llp-delay="1680" fill-opacity="0" style=""/>
+  <polyline class="fil0 root4" points="470.71,324.98 647.95,372.38 647.95,434.38 " data-llp-id="root-9" data-llp-duration="210" data-llp-delay="1890" fill-opacity="0" style=""/>
+  <polyline class="fil0 root2" points="470.71,348.84 95.49,451.35 95.49,491.4 " data-llp-id="root-10" data-llp-duration="210" data-llp-delay="2100" fill-opacity="0" style=""/>
+  <line class="fil0 root5" x1="247.59" y1="409.79" x2="246.83" y2="565.62" data-llp-id="root-11" data-llp-duration="210" data-llp-delay="2310" fill-opacity="0" style=""/>
+  <line class="fil0 root1" x1="814.14" y1="329.48" x2="811.53" y2="474.86" data-llp-id="root-12" data-llp-duration="210" data-llp-delay="2520" fill-opacity="0" style=""/>
+  <line class="fil0 root0" x1="470.71" y1="508.75" x2="566.07" y2="508.91" data-llp-id="root-13" data-llp-duration="210" data-llp-delay="2730" fill-opacity="0" style=""/>
+  <line class="fil0 root6" x1="555.89" y1="511.3" x2="555.52" y2="592.28" data-llp-id="root-14" data-llp-duration="210" data-llp-delay="2940" fill-opacity="0" style=""/>
+  <polyline class="fil0 root4" points="470.71,324.98 647.95,372.38 647.95,434.38 " data-llp-id="root-15" data-llp-duration="210" data-llp-delay="3150" fill-opacity="0" style=""/>
+  <line class="fil0 root3" x1="426.14" y1="210.56" x2="72.69" y2="295.59" data-llp-id="root-16" data-llp-duration="210" data-llp-delay="3360" fill-opacity="0" style=""/>
+  <line class="fil0 root3" x1="258.24" y1="251.56" x2="260.27" y2="344.31" data-llp-id="root-17" data-llp-duration="210" data-llp-delay="3570" fill-opacity="0" style=""/>
+  <polyline class="fil0 root2" points="470.71,348.84 95.49,451.35 95.49,491.4 " data-llp-id="root-18" data-llp-duration="210" data-llp-delay="3780" fill-opacity="0" style=""/>
+  <line class="fil0 root5" x1="247.59" y1="409.79" x2="246.83" y2="565.62" data-llp-id="root-19" data-llp-duration="210" data-llp-delay="3990" fill-opacity="0" style=""/>
+  <line class="fil0 root0" x1="470.71" y1="508.75" x2="566.07" y2="508.91" data-llp-id="root-20" data-llp-duration="210" data-llp-delay="4200" fill-opacity="0" style=""/>
+  <line class="fil0 root6" x1="555.89" y1="511.3" x2="555.52" y2="592.28" data-llp-id="root-21" data-llp-duration="210" data-llp-delay="4410" fill-opacity="0" style=""/>
+ </g>
+</svg>
+      </body>
+    </html>

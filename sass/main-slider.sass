@@ -1,0 +1,58 @@
+#section-slider 
+	background: url(../img/newAndrey/slider-fon.jpg) center no-repeat
+	background-size: cover
+	height: 1200px
+	.content
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	.slider-img
+		margin-right: 240px
+		width: 335px
+		position: relative
+		padding: 1.6rem
+		background-color: #fff
+		border-radius: 40px
+		&:after
+			content: ''
+			position: absolute
+			top: 25px
+			left: 98px
+			background: white
+			border-left: 20px solid transparent
+			border-right: 20px solid transparent
+			height: 25px
+			width: 100px
+			transform: rotate(180deg)
+		.img-wrap
+			border-radius: 40px
+			z-index: 1
+			height: 612px
+			width: 283px
+			overflow: hidden
+			background: url(../img/newAndrey/slider-img.jpg) center no-repeat
+.slider-wrap__item
+	p
+		font-size: 16px
+		font-weight: 400
+		color: #fff
+.slider__navigation-prevArrow 
+	position: absolute
+	left: -120px
+	top: 50%
+	margin-top: -25px
+
+.slider__navigation-nextArrow
+	position: absolute
+	right: -120px
+	top: 50%
+	margin-top: -25px
+
+.slider-text
+	color: #fff
+	width: 500px
+	.comment
+		color: #a4d905
+	&__desc
+		font-size: 16px
+		font-weight: 400

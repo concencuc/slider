@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.eot');
+    src: url('Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Comfortaa-Regular.woff2') format('woff2'),
+        url('Comfortaa-Regular.woff') format('woff'),
+        url('Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.eot');
+    src: url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat-SemiBold.woff') format('woff'),
+        url('Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

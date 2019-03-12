@@ -1,0 +1,98 @@
+@import "vars"
+@import "fonts"
+
+body
+	min-width: 20rem
+	position: relative
+	line-height: 1.2
+	font-family: $default-font
+	overflow-x: hidden
+	margin: 0
+
+#section-banner 
+	background: url(../img/newAndrey/banner-fon.png) bottom no-repeat fixed	
+	background-size: cover
+	width: 100%
+	position: relative
+	height: 1080px
+	.content
+		justify-content: center
+		align-items: center
+	.banner-text
+		text-align: center
+		color: #ffffff
+		width: 66%
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		text-align: center
+		h3
+			font-weight: 400
+			font-size: 26px
+			width: 100%
+#section-lorem 
+	height: 50vh
+	width: 100%
+	position: relative
+	color: #000
+	.content
+		justify-content: center
+	.lorem-wrap
+		display: flex
+		align-items: center
+		width: 50%
+		opacity: 0.7
+		color: #383838
+		font-size: 26px
+		font-weight: 300
+#section-opp 
+	background-color: #fff
+	width: 100%
+	position: relative
+	.content 
+		width: 1170px
+		justify-content: center
+	.opp-item
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		h2
+			padding-top: 8rem
+			text-align: center
+			width: 100%
+			color: #383838
+			font-weight: 400
+		&__text
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			h4 
+				width: 100%
+				padding-left: 8rem
+				padding-bottom: 1.5rem
+				position: relative
+				font-size: 34px
+				font-weight: 300
+				color: #383838	
+				border-bottom: 1px solid rgba(22%, 22%, 22%, .3)				
+				
+				&:before 
+					content: ''
+					position: absolute
+					left: 0px
+					top: 20px
+					display: block
+					width: 83px
+					height: 4px
+					background-color: #4aab49
+			p 
+				width: 77%
+				opacity: 0.7
+				font-size: 26px
+				font-weight: 300
+				line-height: 40px
+#section-offer
+	h3
+		opacity: 1
+	.btn
+		opacity: 1

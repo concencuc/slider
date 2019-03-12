@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "adobe";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Adobe/AdobeClean-Light.eot");
+  src: url("../fonts/Adobe/AdobeClean-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Adobe/AdobeClean-Light.woff") format("woff"), url("../fonts/Adobe/AdobeClean-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "adobe";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Adobe/AdobeClean-Regular.eot");
+  src: url("../fonts/Adobe/AdobeClean-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Adobe/AdobeClean-Regular.woff") format("woff"), url("../fonts/Adobe/AdobeClean-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "adobe";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Adobe/AdobeClean-Bold.eot");
+  src: url("../fonts/Adobe/AdobeClean-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Adobe/AdobeClean-Bold.woff") format("woff"), url("../fonts/Adobe/AdobeClean-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "comfort";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.eot");
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa/Comfortaa-Regular.woff") format("woff"), url("../fonts/Comfortaa/Comfortaa-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "montser";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype"); }
+body {
+  min-width: 20rem;
+  position: relative;
+  line-height: 1.2;
+  font-family: "adobe", sans-serif;
+  overflow-x: hidden;
+  margin: 0; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .header p, .header a, .header span {
+    color: black; }
+  .header .order a {
+    color: white; }
+  .header .lk a:before {
+    content: url(../img/ico/userLKfixed.png); }
+
+#section-intro {
+  margin-top: 10rem;
+  color: #ffffff;
+  height: 670px;
+  background: url(../img/newAndrey/catalog-fon.png) top center no-repeat; }
+  #section-intro .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 6rem; }
+  #section-intro p {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 300; }
+
+#section-catalog .catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #section-catalog .catalog-item h2 {
+    margin-top: 6rem;
+    text-align: center;
+    width: 100%;
+    color: #383838; }
+  #section-catalog .catalog-item__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #000;
+    width: 375px;
+    height: 540px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    background-color: #ffffff; }
+    #section-catalog .catalog-item__text .item-img-wrap {
+      height: 200px;
+      width: 100%; }
+      #section-catalog .catalog-item__text .item-img-wrap img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-radius: 40px 40px 0 0;
+        width: 100%;
+        height: 100%; }
+    #section-catalog .catalog-item__text .item-title-wrap {
+      padding: 0rem 1.4rem; }
+      #section-catalog .catalog-item__text .item-title-wrap h3 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 34px; }
+      #section-catalog .catalog-item__text .item-title-wrap p {
+        opacity: 0.5;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px; }
+    #section-catalog .catalog-item__text .item-footer-wrap {
+      padding: 0rem 1.4rem 2.6rem 1.4rem;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      opacity: 0.5;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px; }
+      #section-catalog .catalog-item__text .item-footer-wrap .eye:before {
+        content: url(../img/newAndrey/eye.png);
+        padding-right: 0.6rem; }
+#section-catalog .catalog-more-btn {
+  margin-top: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  #section-catalog .catalog-more-btn a {
+    color: #4aab49;
+    font-size: 18px;
+    font-weight: 400; }
+    #section-catalog .catalog-more-btn a:after {
+      content: url(../img/newAndrey/arrow.png);
+      padding-left: 0.6rem;
+      position: relative;
+      top: 4px; }
+
+#section-offer h3 {
+  opacity: 1; }
+#section-offer .btn {
+  opacity: 1; }
+
+/*# sourceMappingURL=main-catalog.css.map */
