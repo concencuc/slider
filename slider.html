@@ -31,34 +31,37 @@
 </head>
 <body>
 	<section id="section-slider">
+		<div class="slider-background">
+			<div class="slider-background__item">
+			</div>
+			<div class="slider-background__item">
+			</div>
+			<div class="slider-background__item">
+			</div>		
+			<div class="slider-background__item">
+			</div>
+		</div>
 		<div class="wrap-center">
-			<div class="content">
+			<div class="content" id="viewport">
+				<div class="img-phone"></div>
 				<div class="slider-img">
 					<div class="slider-img__item">
-						<div class="trapezoid"></div>
 						<div class="img-wrap"></div>
 					</div>
 					<div class="slider-img__item">
-						<div class="trapezoid"></div>
 						<div class="img-wrap"></div>
 					</div>
 					<div class="slider-img__item">
-						<div class="trapezoid"></div>
 						<div class="img-wrap"></div>
 					</div>
 					<div class="slider-img__item">
-						<div class="trapezoid"></div>
-						<div class="img-wrap"></div>
-					</div>
-					<div class="slider-img__item">
-						<div class="trapezoid"></div>
 						<div class="img-wrap"></div>
 					</div>
 				</div>
-				<div class="slider-text">
+				<div class="slider-text slider">
 					<div class="slider-text__item">
 						<div class="comment">
-							<p>Eco sleep1</p>
+							<p>Eco sleep</p>
 						</div>
 						<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
 						<div class="slider-text__desc">
@@ -68,65 +71,86 @@
 					</div>
 					<div class="slider-text__item">
 						<div class="comment">
-							<p>Eco sleep2</p>
+							<p>Eco sleep</p>
 						</div>
 						<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
 						<div class="slider-text__desc">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur amet blanditiis non, vel temporibus nobis, voluptatibus modi, exercitationem explicabo eius dolore saepe. Ab nulla quaerat, vero, laboriosam sequi quibusdam minus itaque! Porro cumque officiis commodi velit quibusdam libero quas repellendus eius labore modi iusto omnis beatae magni, molestiae numquam repudiandae dignissimos necessitatibus a ipsam voluptas, asperiores illum deserunt in cum! Minima at illo et animi. Molestiae voluptas inventore praesentium corporis, mollitia debitis enim minus suscipit neque quos exercitationem ipsa unde.</p>
+							<p>gewwwewews</p>
 						</div>
 						<a href="#" class="btn slider-btn">Button</a>
 					</div>
 					<div class="slider-text__item">
 						<div class="comment">
-							<p>Eco sleep3</p>
+							<p>Eco sleep</p>
 						</div>
 						<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
 						<div class="slider-text__desc">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ut accusamus similique? Ipsam voluptatum sapiente natus iusto, sint quia repellat vero suscipit maiores pariatur voluptas sunt deserunt, cupiditate laboriosam reprehenderit molestiae quibusdam repellendus inventore, possimus asperiores ad? Aperiam provident iusto soluta beatae. Alias laboriosam vitae deserunt fugiat fugit, facilis quisquam blanditiis neque! Animi molestias cum odit earum et autem sapiente dolores officiis ipsa ea ex dolorem repellat beatae incidunt, quasi praesentium! Quod non eum est voluptatibus nisi repudiandae omnis cumque.</p>
-						</div>
-						<a href="#" class="btn slider-btn">Button</a>
-					</div>
-					<div class="slider-text__item">
-						<div class="comment">
-							<p>Eco sleep4</p>
-						</div>
-						<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
-						<div class="slider-text__desc">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, nemo alias, modi magnam consequuntur id cum, odit tempora culpa, vel sit quae. Quis quod iste soluta laudantium accusamus vel nesciunt eligendi maiores distinctio magnam, quam quia laboriosam obcaecati voluptates sed, error est nisi quisquam praesentium veniam provident et. Veritatis similique ad mollitia quam repudiandae facilis pariatur, vitae obcaecati facere, maxime reprehenderit dolor cumque asperiores minima, fuga! Voluptate porro dignissimos libero explicabo vitae reiciendis, est fugit eos enim, veniam itaque fuga!</p>
-						</div>
-						<a href="#" class="btn slider-btn">Button</a>
-					</div>
-					<div class="slider-text__item">
-						<div class="comment">
-							<p>Eco sleep5</p>
-						</div>
-						<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
-						<div class="slider-text__desc">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eaque dolorem ducimus consequatur nostrum. Eveniet at pariatur eaque et laborum ab quis modi optio rerum ex, omnis commodi accusamus assumenda mollitia numquam? Deleniti totam impedit voluptatibus autem atque iure quis aperiam excepturi deserunt sapiente eum accusamus illum, distinctio fugit incidunt, earum velit veritatis optio dolorem itaque beatae laudantium vel? Doloribus, neque error! Nulla, id totam neque quo accusantium necessitatibus iste. Sapiente illo, sit soluta quas dignissimos sunt iusto nam aperiam.</p>
+							<p>dsasdsiat iusto ipsam quis! Temporibus, odio minima sequi rem velit. Ipsa nemo est, dolorum repellat amet sit sequi quo ducimus accusamus, fugiat rem harum, laudantium, laboriosam cupiditate? Magni officiis, sequi quis aliquam quos reiciendis veritatis sint omnis explicabo maiores. Iure, facere laboriosam sapiente.</p>
 						</div>
 						<a href="#" class="btn slider-btn">Button</a>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+		function plusSlide() {
+		    showSlides(slideIndex += 1);
+		}
+
+		/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+		function minusSlide() {
+		    showSlides(slideIndex -= 1);  
+		}
+
+		/* Устанавливает текущий слайд */
+		function currentSlide(n) {
+		    showSlides(slideIndex = n);
+		}
+
+		/* Основная функция слайдера */
+		function showSlides(n) {
+		    var i;
+		    var slides = document.getElementsByClassName("slider-text__item");
+		    var dots = document.getElementsByClassName("slider-dots_item");
+		    if (n > slides.length) {
+		      slideIndex = 1
+		    }
+		    if (n < 1) {
+		        slideIndex = slides.length
+		    }
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none";
+		    }
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex - 1].style.display = "block";
+		    dots[slideIndex - 1].className += " active";
+		}
+
+	</script>
 	<script>  
-	     $('.slider-img').slick({
-	      slidesToShow: 1,
-	      slidesToScroll: 1,
-	      asNavFor: '.slider-text',
-	      arrows: false
-	    });
-	    $('.slider-text').slick({
+	     $('.slider-background').slick({
 	      slidesToShow: 1,
 	      slidesToScroll: 1,
 	      asNavFor: '.slider-img',
+	      arrows: false,
+	    });
+	    $('.slider-img').slick({
+	      slidesToShow: 1,
+	      slidesToScroll: 1,
+	      asNavFor: '.slider-background',
 	      focusOnSelect: true,
 	      arrows: true,
-	      prevArrow: '<img class="slider__navigation-prevArrow " src="img/newAndrey/navLeft_carousel.png">',
-	      nextArrow: '<img class="slider__navigation-nextArrow" src="img/newAndrey/navRight_carousel.png">'
+	      prevArrow: '<img class="prev" onclick="minusSlide()" src="img/newAndrey/navLeft_carousel.png">',
+	      nextArrow: '<img class="next" onclick="plusSlide()" src="img/newAndrey/navRight_carousel.png">'
 	    });
 	    		
 	</script>

@@ -1,50 +1,51 @@
 #section-slider 
-	background: url(../img/newAndrey/slider-fon.jpg) center no-repeat
 	background-size: cover
-	height: 1200px
+	min-height: 100vh
+	position: relative
+	.wrap-center
+		position: absolute
+		top: 0
+		left: 0
 	.content
 		display: flex
 		align-items: center
 		flex-wrap: wrap
-	.slider-img
-		margin-right: 240px
-		width: 335px
 		position: relative
-		padding: 1.6rem
-		background-color: #fff
+.slider-background
+	&__item
+		min-height: 100vh
+		background: url(../img/newAndrey/slider-fon.jpg) center no-repeat
+		background-size: cover
+.img-phone
+	height: 650px
+	width: 316px
+	z-index: 999
+	background: url(../img/newAndrey/phone.png) center no-repeat
+	background-color: inherit
+.slider-img
+	margin-left: -300px
+	position: relative
+	margin-right: 220px
+	width: 290px
+	height: 612px
+	.img-wrap
+		position: relative
 		border-radius: 40px
-		&:after
-			content: ''
-			position: absolute
-			top: 25px
-			left: 98px
-			background: white
-			border-left: 20px solid transparent
-			border-right: 20px solid transparent
-			height: 25px
-			width: 100px
-			transform: rotate(180deg)
-		.img-wrap
-			border-radius: 40px
-			z-index: 1
-			height: 612px
-			width: 283px
-			overflow: hidden
-			background: url(../img/newAndrey/slider-img.jpg) center no-repeat
-.slider-wrap__item
-	p
-		font-size: 16px
-		font-weight: 400
-		color: #fff
-.slider__navigation-prevArrow 
+		height: 612px
+		width: 283px
+		overflow: hidden
+		z-index: -1
+		background: url(../img/newAndrey/slider-img.jpg) center no-repeat
+		background-color: inherit
+.prev 
 	position: absolute
-	left: -120px
+	left: 380px
 	top: 50%
 	margin-top: -25px
 
-.slider__navigation-nextArrow
+.next
 	position: absolute
-	right: -120px
+	left: 1100px
 	top: 50%
 	margin-top: -25px
 
@@ -56,3 +57,19 @@
 	&__desc
 		font-size: 16px
 		font-weight: 400
+.slider-text__item
+	animation-name: fade
+	animation-duration: 1.5s
+@-webkit-keyframes fade
+	from
+	opacity: .4
+
+	to
+	opacity: 1
+
+@keyframes fade
+	from
+		opacity: .4
+
+	to
+		opacity: 1
