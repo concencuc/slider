@@ -45,10 +45,13 @@
   color: #fff;
   width: 500px; }
   .slider-text .comment {
-    color: #a4d905; }
+    color: #98d208;
+    letter-spacing: 1.32px;
+    margin-bottom: 1.2rem; }
+  .slider-text h2 {
+    margin-bottom: 2rem; }
   .slider-text__desc {
-    font-size: 16px;
-    font-weight: 400; }
+    margin-bottom: 2.5rem; }
 
 .slider-text__item {
   animation-name: fade;
