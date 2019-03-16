@@ -27,6 +27,7 @@
 	position: relative
 	margin-right: 220px
 	width: 290px
+	box-shadow: 0 0 39px 10px rgba(255, 255, 255, 0.31)
 	height: 612px
 	.img-wrap
 		position: relative
@@ -50,21 +51,57 @@
 	animation-duration: 1.5s
 @-webkit-keyframes fade
 	from
-	opacity: .4
+	opacity: 0
 	to
 	opacity: 1
 @keyframes fade
 	from
-		opacity: .4
+		opacity: 0
 	to
 		opacity: 1
 .prev 
+	cursor: pointer
 	position: absolute
 	left: 380px
 	top: 50%
 	margin-top: -25px
 .next
+	cursor: pointer
 	position: absolute
 	left: 1100px
 	top: 50%
 	margin-top: -25px
+
+#section-alarm_clock
+	background: url(../img/newAndrey/alarm-clock-fon.png) center no-repeat
+	background-size: cover
+	min-height: 100vh
+	display: flex
+	align-items: center
+	.content
+		justify-content: flex-end
+	.alarm_clock-wrap
+		max-width: 38rem
+		p
+			margin-top: 2rem
+			color: #fff
+			width: 90%
+			letter-spacing: 1.32px
+		.alarm_clock-btn
+			margin-top: 2.5rem
+
+#section-sleep_mate
+	background: url(../img/newAndrey/sleep_mate-fon.png) center no-repeat
+	background-size: cover
+	min-height: 100vh
+	.content
+		padding-top: 8rem
+		justify-content: space-between
+	.sleep_mate-text
+		padding-top: 1.9rem
+		p
+			margin-top: 2rem
+			max-width: 30rem
+			color: #fff
+		.sleep_mate-btn
+			margin-top: 2.5rem
